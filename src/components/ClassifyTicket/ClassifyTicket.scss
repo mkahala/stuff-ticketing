@@ -1,0 +1,62 @@
+$classify-text-color: #cbcbcb;
+
+.Classify-container {
+  width: 35%;
+  height: 100%;
+  background-color: #f6f6f6;
+  padding: 25px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 13px;
+  color: $classify-text-color;
+  position: relative;
+  font-weight: 500;
+}
+
+.Classify-title {
+  font-size: 20px;
+  color: #5dd7da;
+  border-bottom: 3px solid #5dd7da;
+  margin-left: 10px;
+  font-weight: bold;
+  padding-bottom: 2px;
+  margin-bottom: 40px;
+}
+
+.Select-dropdown {
+  font-size: 16px;
+  color: #4d4d4d;
+  margin: 10px 0 25px;
+  font-weight: 500;
+}
+
+.Dropdown-icon {
+  width: 12px;
+  margin-left: 10px;
+}
+
+.Classify-input {
+  padding: 5px;
+  border: 1px solid $classify-text-color;
+  width: 50%;
+  margin: 5px 0;
+
+  &::placeholder {
+    font-family: inherit;
+    font-size: 14px;
+    color: $classify-text-color;
+  }
+}
+
+.Proceed-button {
+  background-color: #3fbdd1;
+  color: #d6d6d6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+}

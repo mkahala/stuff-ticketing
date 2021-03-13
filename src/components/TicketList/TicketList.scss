@@ -1,0 +1,70 @@
+$ticket-radius: 40px;
+$ticket-status-radius: 11px;
+$ticket-status-radius-big: 12px;
+
+.Tickets-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 3px solid #72b6ef;
+  width: 90px;
+  height: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: #fdfdfe;
+}
+
+.Ticket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F5F5;
+  color: #d1d1d1;
+  font-size: 14px;
+  width: $ticket-radius;
+  height: $ticket-radius;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.Ticket-status {
+  width: $ticket-status-radius;
+  height: $ticket-status-radius;
+  border-radius: 50%;
+  position: absolute;
+  right: -1px;
+  bottom: 2px;
+  z-index: 2;
+  border: 1px solid #fdfdfe;
+  background-color: #DB636B;
+}
+
+.Status-profile-pic {
+  @extend .Ticket-status;
+  width: $ticket-status-radius-big;
+  height: $ticket-status-radius-big;
+  background-color: #39c5c9;
+  right: -2px;
+}
+
+.Status-snoozed {
+  @extend .Ticket-status;
+  width: $ticket-status-radius-big;
+  height: $ticket-status-radius-big;
+  background-color: #f6c985;
+  right: -2px;
+}
+
+.Profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.Ticket-sep {
+  width: 100%;
+  border-bottom: 1px solid #eff0f0;
+  margin-bottom: 25px;
+}
